@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Admin Dashboard - WINTERVELDT COMMUNITY RADIO NPC</title>
+<link rel="stylesheet" href="styles.css" /></head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="assets/logo.png" alt="logo" style="height:56px;width:56px"/></div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-btn">Site</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="section">
+      <h2>Admin Dashboard (Demo)</h2>
+      <p>This admin dashboard is a static template. Implement server-side authentication and data services to enable content management.</p>
+      <div style="margin-top:12px" class="grid">
+        <div class="program-card"><h3>Manage Posts</h3><p>Draft, edit and publish news items (requires backend).</p></div>
+        <div class="program-card"><h3>Manage Schedule</h3><p>Edit program times and presenters.</p></div>
+        <div class="program-card"><h3>Donations</h3><p>View recent donations and export reports (requires payment gateway).</p></div>
+      </div>
+    </section>
+    <section class="section">
+      <h3>Quick Login (demo)</h3>
+      <form onsubmit="alert('This is a demo admin login. Integrate with secure backend.'); return false;">
+        <input placeholder="Username" style="padding:8px;width:100%;margin-bottom:8px;border-radius:6px;border:1px solid #ddd" required/>
+        <input placeholder="Password" type="password" style="padding:8px;width:100%;margin-bottom:8px;border-radius:6px;border:1px solid #ddd" required/>
+        <button style="padding:10px 14px;border-radius:8px;border:none;background:var(--deep-green);color:white;font-weight:700">Sign in</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

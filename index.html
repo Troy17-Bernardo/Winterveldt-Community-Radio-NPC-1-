@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - WINTERVELDT COMMUNITY RADIO NPC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Winterveldt Community Radio Logo" />
+      <div style="margin-left:12px">
+        <div style="font-weight:800;color:var(--deep-green)">WINTERVELDT</div>
+        <div style="font-size:12px;color:#546b52">Community Radio NPC</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="nav-btn" data-target="index.html">Home</button>
+      <button class="nav-btn" data-target="#about">About Us</button>
+      <button class="nav-btn" data-target="#vision">Our Vision</button>
+      <button class="nav-btn" data-target="#programs">Programs</button>
+      <button class="nav-btn" data-target="#gallery">Gallery</button>
+      <button class="nav-btn" data-target="#schedule">Radio Schedule</button>
+      <button class="nav-btn" data-target="#donate">Donate</button>
+      <button class="nav-btn" data-target="#blog">Blog / News</button>
+      <button class="nav-btn primary" data-target="#contact">Contact Us</button>
+      <button class="nav-btn" data-target="admin.html">Admin Dashboard</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<section class="hero" id="home">
+  <div class="left">
+    <h1>Welcome to WINTERVELDT COMMUNITY RADIO</h1>
+    <p>Community-driven radio serving Winterveldt, Soshanguve and surrounding areas. Your voice matters.</p>
+    <p style="margin-top:10px"><strong>On Air:</strong> Local shows, news, community programs, and youth development.</p>
+  </div>
+  <div class="right" style="width:260px;text-align:center">
+    <img src="assets/logo.png" alt="logo" style="width:220px;height:auto;border-radius:6px" />
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p>WINTERVELDT COMMUNITY RADIO NPC is a non-profit community radio station established in 2025 to provide locally-relevant information, entertainment, and educational programming. We engage with community stakeholders and empower citizens through accessible broadcasting.</p>
+</section>
+
+<section class="section" id="vision">
+  <h2>Our Vision</h2>
+  <p>To be the primary community platform for participatory media, local development, and cultural expression in Winterveldt and adjacent communities.</p>
+</section>
+
+<section class="section" id="programs">
+  <h2>Programs / Projects</h2>
+  <div class="grid">
+    <div class="program-card"><h3>Local News</h3><p>Daily updates focused on community events and public service announcements.</p></div>
+    <div class="program-card"><h3>Youth Program</h3><p>Skills training and radio production workshops for young people.</p></div>
+    <div class="program-card"><h3>Health & Education</h3><p>Regular segments with local health workers and educators.</p></div>
+    <div class="program-card"><h3>Cultural Shows</h3><p>Music, storytelling and traditional arts programming.</p></div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="assets/logo.png" alt="gallery image" />
+    <img src="assets/logo.png" alt="gallery image" />
+    <img src="assets/logo.png" alt="gallery image" />
+    <img src="assets/logo.png" alt="gallery image" />
+  </div>
+</section>
+
+<section class="section" id="schedule">
+  <h2>Radio Schedule</h2>
+  <p>Below is a sample weekly schedule (subject to change):</p>
+  <table style="width:100%;border-collapse:collapse;margin-top:10px">
+    <thead><tr style="text-align:left"><th>Time</th><th>Program</th><th>Host</th></tr></thead>
+    <tbody>
+      <tr><td>06:00 - 09:00</td><td>Morning Drive</td><td>Community Team</td></tr>
+      <tr><td>09:00 - 12:00</td><td>Local News & Talk</td><td>News Desk</td></tr>
+      <tr><td>12:00 - 14:00</td><td>Midday Show</td><td>Presenters</td></tr>
+      <tr><td>14:00 - 17:00</td><td>Youth Hour</td><td>Youth Team</td></tr>
+      <tr><td>17:00 - 20:00</td><td>Evening Mix</td><td>Music Team</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section" id="donate">
+  <h2>Donate</h2>
+  <p>Your support keeps community radio on air. We accept donations to cover operational costs and community programs.</p>
+  <form id="donate-form" style="margin-top:10px;max-width:420px">
+    <label for="donation-amount">Amount (ZAR)</label><br/>
+    <input id="donation-amount" name="amount" type="number" min="10" step="1" placeholder="Enter amount" style="padding:8px;width:100%;margin-top:6px;border-radius:6px;border:1px solid #ddd" required />
+    <button type="submit" style="margin-top:10px;padding:10px 14px;border-radius:8px;border:none;background:var(--deep-green);color:white;font-weight:700">Donate (Demo)</button>
+  </form>
+  <p style="margin-top:8px;font-size:13px;color:#666">Note: Payment integration is not active in this demo package. We can integrate PayPal or Stripe on request.</p>
+</section>
+
+<section class="section" id="blog">
+  <h2>Blog / News</h2>
+  <div class="grid">
+    <div class="program-card"><h3>Station Launch</h3><p>We launched in December 2025 with a community event and local stakeholders.</p></div>
+    <div class="program-card"><h3>Youth Workshop</h3><p>A successful radio production workshop was held with local schools.</p></div>
+  </div>
+</section>
+
+    <div class="topbar-space"></div>
+    <!-- Members Section -->
+    <section class="section">
+      <h2>Board of Directors / Members</h2>
+      <div class="members-list">
+        <div><strong>Nyeleti Mia Mayimele</strong> — Director</div>
+        <div><strong>Xilaveko Prosperity Baloyi</strong> — Director</div>
+        <div><strong>Tinyiko Lenda Malungani</strong> — Director</div>
+      </div>
+    </section>
+
+    <!-- Contacts (Footer area) -->
+    <footer class="footer" id="contact">
+      <h3>Contact Information</h3>
+      <div class="contact-card">
+        <div><strong>Registered Office:</strong> 7886 Block VV, Soshanguve, Pretoria, Gauteng</div>
+        <div><strong>Postal:</strong> 0001</div>
+        <div><strong>Phone:</strong> +27 12 345 6789 (placeholder)</div>
+        <div><strong>Email:</strong> info@winterveldtcommunityradio.org (placeholder)</div>
+        <div><strong>Tax Number:</strong> 9359634236</div>
+      </div>
+      <div style="margin-top:12px;font-size:13px;color:#666">© 2025 WINTERVELDT COMMUNITY RADIO NPC — All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

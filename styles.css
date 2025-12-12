@@ -1,0 +1,73 @@
+/* styles.css - WINTERVELDT COMMUNITY RADIO NPC */
+:root{
+  --cream:#FDFBF5;
+  --soft-green:#B7D3A8;
+  --deep-green:#2E5E3A;
+  --text:#2B2B2B;
+  --accent:#8BB77E;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+.header{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:18px 28px;
+  background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(247,250,244,0.6));
+  border-bottom:1px solid rgba(46,94,58,0.08);
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+.header .logo{display:flex;align-items:center}
+.header .logo img{height:64px;width:64px;object-fit:cover;border-radius:8px;box-shadow:0 2px 8px rgba(46,94,58,0.08)}
+.nav{
+  display:flex;
+  gap:10px;
+  margin-left:auto;
+  align-items:center;
+}
+.nav .nav-btn{
+  background:transparent;
+  border:2px solid transparent;
+  padding:10px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  transition:all .18s ease;
+}
+.nav .nav-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(46,94,58,0.06)}
+.nav .primary{background:var(--soft-green);border-color:var(--deep-green);color:var(--text)}
+.container{max-width:1100px;margin:28px auto;padding:0 20px}
+.hero{
+  background:linear-gradient(180deg, rgba(183,211,168,0.14), rgba(255,255,255,0.02));
+  border-radius:10px;padding:28px;display:flex;gap:20px;align-items:center;
+}
+.hero .left{flex:1}
+.hero h1{margin:0;font-size:28px;color:var(--deep-green)}
+.hero p{margin:8px 0 0; color:#3b3b3b}
+.section{margin-top:26px;padding:22px;background:white;border-radius:8px;box-shadow:0 6px 20px rgba(46,94,58,0.03)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.program-card{padding:14px;border-radius:8px;border:1px solid rgba(46,94,58,0.06)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.gallery-grid img{width:100%;height:120px;object-fit:cover;border-radius:6px}
+.members-list{display:flex;flex-direction:column;gap:8px}
+.footer{
+  margin-top:20px;padding:18px;border-top:1px solid rgba(46,94,58,0.06);background:transparent;color:#383838;
+}
+.contact-card{display:flex;flex-direction:column;gap:8px}
+.topbar-space{height:8px}
+@media(max-width:800px){
+  .header{padding:12px}
+  .nav{gap:6px}
+  .nav .nav-btn{padding:8px}
+  .hero{flex-direction:column;align-items:flex-start}
+}
